@@ -61,7 +61,7 @@ function criarTabela(){
     const table = document.createElement('table')
     table.setAttribute('border', '1')
     let tabelaComDado =" ";
-    let mediaDaTurma;
+    let mediaDaTurma = 0;
     tabelaComDado += ` <tbody>
         <tr>
             <th>Aluno</th>
@@ -73,7 +73,7 @@ function criarTabela(){
         `
     BancoAlunos.forEach(element =>{
 
-        mediaDaTurma =+ Number(element.media)
+        mediaDaTurma = mediaDaTurma + element.media
 
         tabelaComDado += `
         <tr>
@@ -81,12 +81,15 @@ function criarTabela(){
             <td>${element.nota1}</td>
             <td>${element.nota2}</td>
             <td>${element.nota3}</td>
-            <td>${element.media}</td>
+            <td>${aprovaOuReprovado(element.media)}</td>
         </tr>
 
         </tbody
         `
     })
+
+    console.log(mediaDaTurma)
+
     tabelaComDado += `
         <tr>
         <td> ${(mediaDaTurma/BancoAlunos.length).toFixed(2)}</td>
@@ -96,6 +99,15 @@ function criarTabela(){
     section2.appendChild(table)
 }
 
-
+function aprovaOuReprovado(media){
+    if(media >= 4 && media <=6.9){
+        return 'AF'
+    } else if ( media < 4){
+        return 'reprovado'
+    } else if( media >= 7){
+        return 'aprovado'
+    }
+        
+}
 
 // toda vez que apertar o botão adicionar vai colocar o objeto dentro do array
