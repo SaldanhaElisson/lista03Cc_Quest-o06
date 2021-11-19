@@ -1,0 +1,180 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@300;400&display=swap');
+
+:root{
+    --color-blue5: #030140;
+    --color-blue4:#1C618C;
+    --color-blue3:#B6ECF2;
+    --font-open: 'Open Sans', sans-serif;
+    --font-roboto: 'Roboto', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: var(--color-blue3);
+}
+
+
+#main{
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+#main2{
+    width: 100vw;
+    height: 100vh;
+}
+
+
+nav{
+    height: 5rem;
+    background: var(--color-blue4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav h1{ 
+    font-size: 3rem;
+    color: white;
+    font-family: var(--font-roboto);
+    
+}
+
+section{
+    margin: auto;
+    margin-top: 15rem;
+    width: 130rem;
+    height: 60rem;
+    
+    background-color: var(--color-blue4);
+ 
+}
+.description {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+.description p{
+    margin-left: 1rem;
+    margin-top: 1rem;
+    font-family: var(--font-open);
+}
+
+.description p:nth-child(1){
+    margin-left: 1rem;
+}
+
+.exercise{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    height: 70%;
+}
+
+.questions{
+    width: 15rem;
+    height: 5rem;
+    background-color: var(--color-blue5);
+    border: 1px solid white;
+
+    margin: 1rem;
+
+    border-radius: 2rem  0 2rem 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+
+    color: white;
+
+    
+}
+a{
+    text-decoration: none;
+}
+
+
+.questions:hover{
+    background: var(--color-blue3);
+    color: black;
+}
+
+form{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+button{
+    width: 7rem;
+    height: 5rem;
+
+    font-family: var(--font-roboto);
+    margin-left: 2rem;
+
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.placeTable{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+table{
+    width: 56rem;
+    height: 5rem;
+    font-size: 1.6rem;
+    margin-right: 5rem;
+}
+
+table td{
+    border:  1px solid black;
+}
+
+label{
+    font-size: 2rem;
+}
+
+p{
+    font-size: 2rem;;
+}
+
+
+input{
+    width: 5rem;
+    height: 3rem;
+}
+
+button{
+   
+    margin-top: 2rem;
+}
+
+.inpunt2 {
+    width: 12rem;
+    height: 3rem;
+}
+
+#nome{
+    width: 17rem;
+    height: 2rem;
+}
